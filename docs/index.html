@@ -42,7 +42,7 @@
                         <h1 class="mx-auto my-0 text-uppercase">ReFi Zuerich</h1>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">The First ReFi Gathering in Zürich, Switzerland.</h2>
                         <h2 class="text-white-50 mx-auto mt-2 mb-5">November 26, 2022</h2>
-                        <a class="btn btn-primary" href="#about">Be part of this journey!</a>
+                        <a class="btn btn-primary" href="#tickets">Be part of this journey!</a>
                     </div>
                 </div>
             </div>
@@ -101,7 +101,26 @@
                             <div class="d-flex h-100">
                                 <div class="project-text w-100 my-auto text-center text-lg-left">
                                     <h4 class="text-white">Tickets</h4>
-                                    <p class="mb-0 text-white-50"><a href="https://tr.ee/cWAsW0gSAb">Buy now!</a></p>
+                                    <p class="mb-0 text-white-50"><!-- Noscript content for added SEO -->
+                                        <noscript><a href="https://refizh.eventbrite.ch" rel="noopener noreferrer" target="_blank">Buy Tickets on Eventbrite</a></noscript>
+                                        <!-- You can customize this button any way you like -->
+                                        <button id="eventbrite-widget-modal-trigger-446519701447" type="button">Buy Tickets</button>
+                                        
+                                        <script src="https://www.eventbrite.ch/static/widgets/eb_widgets.js"></script>
+                                        
+                                        <script type="text/javascript">
+                                            var exampleCallback = function() {
+                                                console.log('Order complete!');
+                                            };
+                                        
+                                            window.EBWidgets.createWidget({
+                                                widgetType: 'checkout',
+                                                eventId: '446519701447',
+                                                modal: true,
+                                                modalTriggerElementId: 'eventbrite-widget-modal-trigger-446519701447',
+                                                onOrderComplete: exampleCallback
+                                            });
+                                        </script></a></p>
                                     <hr class="d-none d-lg-block mb-0 ms-0" />
                                 </div>
                             </div>
